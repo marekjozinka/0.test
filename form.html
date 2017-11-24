@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Navrh stranky</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+   
+</head>
+<body>
+<div class="row" id="content-row">
+<div class="ten  columns offset-by-one" id="content" >
+
+  <form action="/action_page.php">
+    <strong>Name:</strong> <br>
+    <div class="row" >
+          <div class="six columns" ></div>
+              <input type="text" name="first name" placeholder="first">
+          <div class="six columns" ></div>
+              <input type="text" name="second name" placeholder="last">
+     </div>
+     <strong>Address:</strong> <br>
+      <div class="row" >
+         <div class="twelve columns" >
+            <input type="text" name="address1" placeholder="Address line 1"></div>
+      </div>
+      <div class="row" >
+          <div class="twelve columns" >
+           <input type="text" name="address2" placeholder="Address line 2"></div>
+      </div>
+      <div class="row" >
+          <div class="four columns" >
+             <input type="text" name="city" placeholder="city"></div>
+          <div class="four columns" >
+                <select name="platforma" size="1"> 
+                <option value="state">State
+                <option value="sk">Slovakia
+                <option value="ge">Germany
+                <option value="uk">UK
+                </select>
+          </div>
+          <div class="four columns" >
+              <input type="text" name="code" placeholder="ZIP code"></div>
+      </div>
+      <strong>Email:</strong> <br>
+      <div class="row" >
+            <div class="six columns" >
+               <input type="text" name="email" placeholder="email"></div>
+            <div class="six columns" >
+                <input type="text" name="second name" placeholder="phone"></div><br>
+   
+      </div>
+       <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+</body>
+
+
+
+  
+  
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script>
+  jQuery('.tab-link').on('click', function(e){
+      e.preventDefault();
+      if(jQuery('.tab').is('.active')){
+        jQuery('.tab').removeClass('active');
+      }
+      else{
+        jQuery('.tab').addClass('active');
+      }
+    })
+  </script>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
